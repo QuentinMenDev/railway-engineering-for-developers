@@ -181,3 +181,9 @@ export default function M2L1({ goTo }) {
     </>
   );
 }
+
+export const quiz = [
+  { text: 'What is the primary purpose of a ground investigation?', options: ['To find buried treasure', 'To determine soil properties, bearing capacity, and groundwater conditions', 'To plan the track alignment', 'To test signalling equipment'], correct: 1, explanation: 'Ground investigation determines soil composition, strength, water table position, and hazards. All foundation and earthwork design depends on this.' },
+  { text: 'What does the Standard Penetration Test (SPT) measure?', options: ['Rail hardness', 'Soil resistance by counting blows to drive a sampler', 'Water permeability of rock', 'Concrete strength'], correct: 1, explanation: 'SPT counts blows to drive a sampler 300 mm. Higher N-values = denser soil. One of the most common in-situ tests worldwide.' },
+  { text: 'Why is a desk study performed before physical investigation?', options: ['It is cheaper than fieldwork', 'It identifies geological risks, historical land use, and existing records before mobilising', 'It is required by law', 'All of the above'], correct: 1, explanation: 'A desk study reviews geological maps, historical records, mining data, and environmental databases to target fieldwork efficiently.' },
+];

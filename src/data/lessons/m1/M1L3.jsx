@@ -172,3 +172,9 @@ export default function M1L3({ goTo }) {
     </>
   );
 }
+
+export const quiz = [
+  { text: 'What are the main components of a railway turnout?', options: ['Points, rails, and signals', 'Switch rails, crossing (frog), and check rails', 'Sleepers, ballast, and clips', 'Motors, detectors, and locks'], correct: 1, explanation: 'A turnout has switch rails (movable blades), a crossing/frog (where rails intersect), and check rails (guiding opposite wheel).' },
+  { text: 'What does a "1-in-9" turnout geometry mean for train speed?', options: ['Trains can pass at up to 90 km/h', 'Diverging speed is limited to about 40 km/h', 'Only freight trains can use it', 'It requires no speed restriction'], correct: 1, explanation: 'A 1-in-9 has a sharp diverging angle, limiting speed to ~40 km/h. A 1-in-40 allows 160+ km/h diverging.' },
+  { text: 'What is the difference between a facing and trailing movement through points?', options: ['Facing is faster, trailing is slower', 'Facing means the train approaches switch tips first (riskier); trailing approaches from the heel', 'They are interchangeable terms', 'Facing is for passengers, trailing for freight'], correct: 1, explanation: 'In a facing movement, incorrect point setting risks derailment. In trailing, wheels naturally deflect the blades — inherently safer.' },
+];

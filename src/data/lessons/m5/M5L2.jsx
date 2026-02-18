@@ -536,3 +536,10 @@ export default function M5L2({ goTo }) {
     </>
   );
 }
+
+export const quiz = [
+  { text: 'Why does the contact wire follow a zig-zag pattern (stagger)?', options: ['To reduce wind resistance on the wire', 'To spread wear evenly across the full width of the pantograph strip', 'To compensate for thermal expansion', 'To improve electrical conductivity'], correct: 1, explanation: 'Stagger offsets the contact wire alternately left and right of the track centreline so the pantograph strip wears evenly across its width, rather than cutting a groove in one spot.' },
+  { text: 'What is a neutral section?', options: ['A section of track with no signalling', 'A short de-energised gap where two power feeding sections meet, which the train must coast through', 'A platform area where trains are not allowed to stop', 'A section reserved for unpowered rolling stock'], correct: 1, explanation: 'Neutral sections are short gaps with no power that separate different feeding sections (potentially from different phases or substations). Trains coast through them to avoid short-circuiting between sections.' },
+  { text: 'What maintains constant wire tension across temperature changes?', options: ['Rigid supports at each mast', 'Auto-tensioning equipment (counterweights or spring systems) compensating for thermal expansion', 'The catenary wire absorbs all expansion', 'Expansion joints in the contact wire every 100 m'], correct: 1, explanation: 'Auto-tensioning systems use counterweights or springs at anchor points to maintain constant tension as the wire expands and contracts with temperature changes, ensuring consistent pantograph contact.' },
+  { text: 'What is "dewirement"?', options: ['Routine removal of old overhead wire', 'When the pantograph catches and pulls down the contact wire, typically caused by high winds or a damaged pantograph', 'Disconnecting a section for maintenance', 'A method of installing new wire'], correct: 1, explanation: 'Dewirement occurs when the pantograph snags and tears down the contact wire. It causes extensive damage and lengthy line closures. Common causes include high winds, ice, or a damaged pantograph.' },
+];

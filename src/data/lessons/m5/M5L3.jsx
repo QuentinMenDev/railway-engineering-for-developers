@@ -569,3 +569,10 @@ export default function M5L3({ goTo }) {
     </>
   );
 }
+
+export const quiz = [
+  { text: 'What is the typical substation spacing for 25 kV AC systems?', options: ['1–3 km', '5–10 km', '15–25 km', '40–80 km'], correct: 3, explanation: 'The high voltage of 25 kV AC allows substations to be spaced 40–80 km apart, compared to every 3–5 km for DC systems, significantly reducing infrastructure cost.' },
+  { text: 'What does an auto-transformer feeding system do?', options: ['Automatically adjusts voltage for different train types', 'Reduces electromagnetic interference with telecoms and signalling by balancing the current flow through a return conductor', 'Converts AC to DC for third rail sections', 'Provides backup power during substation outages'], correct: 1, explanation: 'Auto-transformers split the supply into +25 kV and −25 kV relative to the rail, balancing current flow through a dedicated return conductor. This greatly reduces electromagnetic interference with nearby telecoms and signalling cables.' },
+  { text: 'What is the main risk of stray current in DC systems?', options: ['Interference with train radio communications', 'Electrolytic corrosion of buried metallic structures (pipes, cable sheaths, reinforcement)', 'Overheating of the running rails', 'Damage to overhead line equipment'], correct: 1, explanation: 'In DC systems, return current can leak from the rails into the ground and flow through buried metallic structures. This causes electrolytic corrosion that damages water pipes, gas mains, cable sheaths, and reinforced concrete.' },
+  { text: 'What happens during regenerative braking?', options: ['The brakes generate heat that warms the carriages', 'The train’s motors act as generators, converting kinetic energy to electrical energy fed back to the supply', 'Compressed air is recovered and stored for later use', 'The track magnets slow the train electromagnetically'], correct: 1, explanation: 'During regenerative braking, traction motors run as generators. The kinetic energy of the moving train is converted to electrical energy and fed back into the supply network (or consumed by other nearby trains).' },
+];

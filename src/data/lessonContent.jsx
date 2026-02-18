@@ -1,16 +1,20 @@
 import React from 'react';
-import getM0Content from './lessons/m0';
-import getM1Content from './lessons/m1';
-import getM2Content from './lessons/m2';
-import getM3Content from './lessons/m3';
-import getM4Content from './lessons/m4';
-import getM5Content from './lessons/m5';
-import getM6Content from './lessons/m6';
-import getM7Content from './lessons/m7';
-import getM8Content from './lessons/m8';
-import getM9Content from './lessons/m9';
+import getM0Content, { quizData as m0Quiz } from './lessons/m0';
+import getM1Content, { quizData as m1Quiz } from './lessons/m1';
+import getM2Content, { quizData as m2Quiz } from './lessons/m2';
+import getM3Content, { quizData as m3Quiz } from './lessons/m3';
+import getM4Content, { quizData as m4Quiz } from './lessons/m4';
+import getM5Content, { quizData as m5Quiz } from './lessons/m5';
+import getM6Content, { quizData as m6Quiz } from './lessons/m6';
+import getM7Content, { quizData as m7Quiz } from './lessons/m7';
+import getM8Content, { quizData as m8Quiz } from './lessons/m8';
+import getM9Content, { quizData as m9Quiz } from './lessons/m9';
 
-// ─── Export ──────────────────────────────────────────────────────────
+// ─── Quiz data (aggregated from each lesson file) ───────────────────
+
+export const quizData = { ...m0Quiz, ...m1Quiz, ...m2Quiz, ...m3Quiz, ...m4Quiz, ...m5Quiz, ...m6Quiz, ...m7Quiz, ...m8Quiz, ...m9Quiz };
+
+// ─── Lesson content ─────────────────────────────────────────────────
 
 export default function getLessonContent(lessonId, goTo) {
   const m0 = getM0Content(lessonId, goTo);

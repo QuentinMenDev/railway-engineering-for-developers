@@ -1,8 +1,8 @@
 import React from 'react';
-import M4L1 from './M4L1';
-import M4L2 from './M4L2';
-import M4L3 from './M4L3';
-import M4L4 from './M4L4';
+import M4L1, { quiz as m4l1Quiz } from './M4L1';
+import M4L2, { quiz as m4l2Quiz } from './M4L2';
+import M4L3, { quiz as m4l3Quiz } from './M4L3';
+import M4L4, { quiz as m4l4Quiz } from './M4L4';
 
 export default function getM4Content(lessonId, goTo) {
   switch (lessonId) {
@@ -13,3 +13,10 @@ export default function getM4Content(lessonId, goTo) {
     default: return null;
   }
 }
+
+export const quizData = {
+  'm4-l1': m4l1Quiz,
+  'm4-l2': m4l2Quiz,
+  'm4-l3': m4l3Quiz,
+  'm4-l4': m4l4Quiz,
+};

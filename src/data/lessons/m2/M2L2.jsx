@@ -157,3 +157,9 @@ export default function M2L2({ goTo }) {
     </>
   );
 }
+
+export const quiz = [
+  { text: 'What is "mass haul balance" in earthworks design?', options: ['Weighing all trains on the line', 'Balancing excavation volume from cuttings with fill needed for embankments', 'Distributing weight across a bridge', 'Calibrating track scales'], correct: 1, explanation: 'Mass haul balance minimises waste by matching cutting material to embankment needs. A mass haul diagram optimises material movement.' },
+  { text: 'What is the biggest long-term risk with railway embankments?', options: ['They block the view', 'Settlement and slope instability under repeated train loading', 'They are expensive to build', 'They attract wildlife'], correct: 1, explanation: 'Embankments can settle and slopes can become unstable due to water, vegetation loss, or climate effects, causing track geometry faults.' },
+  { text: 'What is the Proctor test used for?', options: ['Testing rail steel quality', 'Determining optimum moisture content for soil compaction', 'Measuring bridge deflection', 'Checking signal cable resistance'], correct: 1, explanation: 'The Proctor test finds the moisture content at which maximum compaction density is achieved — critical for durable embankments.' },
+];

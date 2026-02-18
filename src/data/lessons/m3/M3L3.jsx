@@ -157,3 +157,9 @@ export default function M3L3({ goTo }) {
     </>
   );
 }
+
+export const quiz = [
+  { text: 'What is the difference between "loading gauge" and "structure gauge"?', options: ['They are the same thing', 'Loading gauge is max vehicle envelope; structure gauge is min clearance infrastructure must provide', 'Loading gauge is for bridges; structure gauge for tunnels', 'Loading gauge for freight; structure gauge for passengers'], correct: 1, explanation: 'Loading gauge = maximum vehicle cross-section including dynamic movements. Structure gauge = minimum clearance infrastructure provides. The gap is the safety margin.' },
+  { text: 'Why does the UK have a notoriously tight loading gauge?', options: ['UK trains are smaller', 'Victorian-era tunnels and bridges were built to smaller clearances', 'UK regulations are stricter', 'The UK uses narrower rails'], correct: 1, explanation: 'Early construction in the 1830s–1860s created thousands of tight structures. Enlarging them is enormously expensive.' },
+  { text: 'What is a "bay platform" at a station?', options: ['A platform facing the sea', 'A dead-end platform where trains arrive/depart from one end', 'A curved platform', 'A maintenance platform'], correct: 1, explanation: 'A bay platform is a stub platform alongside a through platform, commonly used for branch line terminating services.' },
+];

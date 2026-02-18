@@ -193,3 +193,9 @@ export default function M3L2({ goTo }) {
     </>
   );
 }
+
+export const quiz = [
+  { text: 'What is the key advantage of a TBM over cut-and-cover?', options: ['It is always cheaper', 'It can bore deep tunnels without disturbing the surface', 'It is faster in all conditions', 'It produces a better-shaped tunnel'], correct: 1, explanation: 'TBMs bore at depth without surface disruption — essential in urban areas. The trade-off is higher equipment cost.' },
+  { text: 'What is the biggest ongoing maintenance concern for Victorian-era tunnels?', options: ['They are too small for modern trains', 'Water ingress through deteriorating brick linings', 'Ventilation for diesel trains', 'Lack of lighting'], correct: 1, explanation: 'Water ingress through ageing brick linings is the primary issue. Water attacks mortar, freeze-thaw spalls bricks, and leaks can create voids.' },
+  { text: 'What type of retaining wall uses soil reinforcement with geotextiles or steel strips?', options: ['Gravity wall', 'Cantilever wall', 'Sheet pile wall', 'Reinforced earth wall'], correct: 3, explanation: 'Reinforced earth walls use geotextile or steel strip layers within compacted fill. They are cost-effective for large heights.' },
+];

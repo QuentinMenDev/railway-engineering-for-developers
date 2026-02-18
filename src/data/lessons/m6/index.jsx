@@ -1,7 +1,7 @@
 import React from 'react';
-import M6L1 from './M6L1';
-import M6L2 from './M6L2';
-import M6L3 from './M6L3';
+import M6L1, { quiz as m6l1Quiz } from './M6L1';
+import M6L2, { quiz as m6l2Quiz } from './M6L2';
+import M6L3, { quiz as m6l3Quiz } from './M6L3';
 
 export default function getM6Content(lessonId, goTo) {
   switch (lessonId) {
@@ -11,3 +11,9 @@ export default function getM6Content(lessonId, goTo) {
     default: return null;
   }
 }
+
+export const quizData = {
+  'm6-l1': m6l1Quiz,
+  'm6-l2': m6l2Quiz,
+  'm6-l3': m6l3Quiz,
+};

@@ -168,3 +168,9 @@ export default function M2L3({ goTo }) {
     </>
   );
 }
+
+export const quiz = [
+  { text: 'What is the biggest enemy of railway earthworks?', options: ['Wind', 'Water', 'Temperature', 'Vegetation'], correct: 1, explanation: 'Water causes most problems: ballast fouling, subgrade softening, slope erosion, frost heave, and embankment slips.' },
+  { text: 'What is a "cess drain" in railway terms?', options: ['A drain under the platform', 'A ditch running alongside the track at formation level', 'A pipe through an embankment', 'A drain inside a tunnel'], correct: 1, explanation: 'Cess drains run alongside the track collecting surface water and directing it to outfalls — the first line of defence against water damage.' },
+  { text: 'What does "factor of safety" mean in slope stability?', options: ['The number of safety barriers', 'The ratio of resisting forces to driving forces in a potential slip', 'Distance from track to slope edge', 'Number of inspections per year'], correct: 1, explanation: 'FoS is resisting/driving forces ratio. FoS of 1.0 = verge of failure. Design standards require ≥ 1.3–1.5 for permanent slopes.' },
+];

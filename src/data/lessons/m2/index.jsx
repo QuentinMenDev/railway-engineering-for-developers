@@ -1,7 +1,7 @@
 import React from 'react';
-import M2L1 from './M2L1';
-import M2L2 from './M2L2';
-import M2L3 from './M2L3';
+import M2L1, { quiz as m2l1Quiz } from './M2L1';
+import M2L2, { quiz as m2l2Quiz } from './M2L2';
+import M2L3, { quiz as m2l3Quiz } from './M2L3';
 
 export default function getM2Content(lessonId, goTo) {
   switch (lessonId) {
@@ -11,3 +11,9 @@ export default function getM2Content(lessonId, goTo) {
     default: return null;
   }
 }
+
+export const quizData = {
+  'm2-l1': m2l1Quiz,
+  'm2-l2': m2l2Quiz,
+  'm2-l3': m2l3Quiz,
+};

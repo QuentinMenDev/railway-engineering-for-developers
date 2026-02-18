@@ -86,3 +86,9 @@ export default function M0L2({ goTo }) {
     </>
   );
 }
+
+export const quiz = [
+  { text: 'How many key subsystems make up a railway?', options: ['4', '6', '8', '12'], correct: 2, explanation: 'A railway has 8 key subsystems: Track, Civil/Geotechnical, Structures, Signalling, Electrification, Rolling Stock, Telecommunications, and Operations.' },
+  { text: 'Which discipline is often described as the "operating system" of the railway?', options: ['Permanent Way', 'Operations & Timetabling', 'Signalling & Train Control', 'Telecommunications'], correct: 2, explanation: 'Signalling functions like the OS — managing resource allocation (track sections), enforcing safety rules, and controlling access (route setting).' },
+  { text: 'In modern railways, who typically owns and maintains the infrastructure?', options: ['Train operating companies', 'The infrastructure manager (e.g. Network Rail)', 'Rolling stock leasing companies', 'Local government councils'], correct: 1, explanation: 'Most modern railways separate the infrastructure manager (track, signalling, stations) from train operating companies. In the UK this is Network Rail.' },
+];

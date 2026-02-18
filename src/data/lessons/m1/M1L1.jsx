@@ -267,3 +267,10 @@ export default function M1L1({ goTo }) {
     </>
   );
 }
+
+export const quiz = [
+  { text: 'What is the primary function of ballast in the track structure?', options: ['Provide a smooth surface for trains', 'Distribute load, drain water, and enable geometry adjustment', 'Prevent electromagnetic interference', 'Insulate the track thermally'], correct: 1, explanation: 'Ballast (angular crushed rock) distributes axle loads, allows drainage, and enables geometry adjustment by tamping machines.' },
+  { text: 'What is the standard rail profile weight used in Europe?', options: ['UIC 40 (40 kg/m)', 'UIC 54 (54 kg/m)', 'UIC 60 (60 kg/m)', 'UIC 80 (80 kg/m)'], correct: 2, explanation: 'UIC 60 (60 kg/m) is the modern European standard for mainline track. Heavier rail distributes loads better and resists wear longer.' },
+  { text: 'What does "CWR" stand for and why is it important?', options: ['Central Wire Routing — for signal cables', 'Continuously Welded Rail — eliminates jointed rail problems', 'Controlled Wheel Resistance — for braking', 'Concrete Wall Reinforcement — for structures'], correct: 1, explanation: 'Continuously Welded Rail eliminates joints (causing noise and wear) by welding rails into 200m+ lengths. The trade-off is thermal stress management.' },
+  { text: 'What layer sits immediately below the ballast?', options: ['Subgrade', 'Rail', 'Sub-ballast', 'Sleepers'], correct: 2, explanation: 'Sub-ballast is a filter/transition layer between ballast and subgrade, preventing fine particles migrating upward and providing additional load distribution.' },
+];

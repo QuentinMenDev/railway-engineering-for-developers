@@ -171,3 +171,10 @@ export default function M3L1({ goTo }) {
     </>
   );
 }
+
+export const quiz = [
+  { text: 'Why are railway bridge loads more challenging than road bridge loads?', options: ['Trains are longer than lorries', 'Railway loads are much heavier and applied repeatedly over decades', 'Railways need wider bridges', 'Train vibrations damage concrete'], correct: 1, explanation: 'A freight wagon can weigh 100+ tonnes, and a busy line sees 200+ trains daily for a 120-year design life, requiring fatigue assessment.' },
+  { text: 'What is the most common type of historic railway bridge in the UK?', options: ['Steel truss', 'Reinforced concrete', 'Masonry arch', 'Suspension bridge'], correct: 2, explanation: 'The UK has ~30,000 Victorian masonry arch bridges. Arches work in compression, which masonry handles very well.' },
+  { text: 'What is the difference between an overbridge and an underbridge?', options: ['Overbridges are longer', 'An overbridge carries a road over the railway; an underbridge carries the railway over an obstacle', 'Overbridges are for pedestrians only', 'No standard difference'], correct: 1, explanation: 'Overbridge = carries something OVER the railway. Underbridge = carries the railway OVER something. Perspective is always from the railway.' },
+  { text: 'What is "scour" at a bridge foundation?', options: ['Rust on steel beams', 'Erosion of soil around foundations by water flow', 'Wear of bridge deck surface', 'Noise from passing trains'], correct: 1, explanation: 'Scour erodes riverbed material around foundations, especially during floods. It is a leading cause of bridge failure worldwide.' },
+];

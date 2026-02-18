@@ -183,3 +183,10 @@ export default function M1L2({ goTo }) {
     </>
   );
 }
+
+export const quiz = [
+  { text: 'What is the standard gauge measurement?', options: ['1,000 mm', '1,435 mm', '1,524 mm', '1,668 mm'], correct: 1, explanation: '1,435 mm (4 ft 8½ in) is the international standard gauge, used on ~55% of world railways. It originated from early colliery tramways.' },
+  { text: 'What is the purpose of cant (superelevation) on curved track?', options: ['To improve drainage', 'To counteract centrifugal force on trains in curves', 'To reduce noise from wheel flanges', 'To allow higher loads on curves'], correct: 1, explanation: 'Cant raises the outer rail to counteract centrifugal force. The amount depends on design speed and curve radius.' },
+  { text: 'What type of mathematical curve is used for transitions on railways?', options: ['Circular arc', 'Parabola', 'Clothoid (Euler spiral)', 'Hyperbola'], correct: 2, explanation: 'Clothoids have curvature increasing linearly with distance, giving a gradual transition — like an easing function in animation.' },
+  { text: 'What is the typical maximum gradient for a mainline railway?', options: ['0.1–0.5%', '1–2.5%', '5–8%', '10–15%'], correct: 1, explanation: 'Mainlines stay below 1–2.5%. High-speed lines aim for under 3.5%. Mountain railways with rack systems can exceed 7–8%.' },
+];

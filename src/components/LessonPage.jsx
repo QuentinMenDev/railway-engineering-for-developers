@@ -1,5 +1,5 @@
 import Quiz from './Quiz';
-import quizData from '../data/quizData';
+import { quizData } from '../data/lessonContent';
 import { courseModules, getModuleForLesson } from '../data/courseStructure';
 
 export default function LessonPage({ lessonId, children, goTo, progress, toggleLesson, saveQuiz }) {

@@ -217,3 +217,10 @@ export default function M4L3({ goTo }) {
     </>
   );
 }
+
+export const quiz = [
+  { text: 'At ETCS Level 2, what happens to lineside signals?', options: ['Painted a different colour', 'Removed — movement authority sent directly to cab via radio', 'They flash instead of steady aspects', 'Kept as backup'], correct: 1, explanation: 'ETCS L2 eliminates lineside signals. The RBC sends movement authority via GSM-R radio to the cab display (DMI).' },
+  { text: 'What is a "movement authority" in ETCS?', options: ['A government permit to run trains', 'Permission to proceed to a specific point, with a speed profile', 'A timetable allocation', "A driver's licence"], correct: 1, explanation: 'An MA tells the train how far it may proceed and at what speeds, including a supervised speed profile and target point.' },
+  { text: 'What does GoA 4 mean?', options: ['Partially automated with driver override', 'Semi-automated with driver present', 'Driverless with an attendant', 'Fully unattended operation with no staff on train'], correct: 3, explanation: 'GoA 4 = Unattended Train Operation (UTO). No driver, no attendant. Examples: Docklands Light Railway, many modern metros.' },
+  { text: 'What is the biggest challenge of migrating from legacy to digital signalling?', options: ['Digital systems are unreliable', 'The old system must keep running safely during transition', 'Not enough software engineers', 'Digital signals use too much electricity'], correct: 1, explanation: 'You cannot stop the railway. Legacy and digital must coexist during transition — like refactoring a monolith to microservices in production.' },
+];

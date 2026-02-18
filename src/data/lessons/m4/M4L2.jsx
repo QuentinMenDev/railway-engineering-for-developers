@@ -230,3 +230,10 @@ export default function M4L2({ goTo }) {
     </>
   );
 }
+
+export const quiz = [
+  { text: 'What is the purpose of an interlocking?', options: ['To lock the signalling room door', 'To prevent conflicting train movements by enforcing safety logic', 'To connect signal boxes together', 'To record train positions'], correct: 1, explanation: 'An interlocking enforces safety: if a route is set, all conflicting routes are locked out and all points locked in position.' },
+  { text: 'What SIL is required for railway signalling interlockings?', options: ['SIL 1', 'SIL 2', 'SIL 3', 'SIL 4'], correct: 3, explanation: 'SIL 4 — the highest level, meaning <1 dangerous failure per 10⁹ hours. Same as nuclear safety systems and aviation fly-by-wire.' },
+  { text: 'How does a track circuit detect a train?', options: ['Using cameras', 'By sensing the short-circuit created by steel wheels bridging the rails', 'By weighing the track', "By detecting the train's radio signal"], correct: 1, explanation: 'Current flows through the rails. When wheelsets bridge (shunt) the rails, a relay de-energises indicating "occupied." It\'s fail-safe — a broken rail also triggers occupation.' },
+  { text: 'What is the main disadvantage of axle counters vs track circuits?', options: ['They are less accurate', 'They cannot detect broken rails, and miscounts require manual reset', 'They are more expensive', 'They only work in tunnels'], correct: 1, explanation: 'Miscounts require a technician to physically verify the section is clear before resetting — a slow process causing delays.' },
+];

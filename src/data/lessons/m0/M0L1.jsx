@@ -74,3 +74,10 @@ export default function M0L1({ goTo }) {
     </>
   );
 }
+
+export const quiz = [
+  { text: 'What is the approximate rolling resistance of steel wheel on steel rail?', options: ['5–10% of the load', '1–2% of the load', '0.1–0.3% of the load', '0.01–0.03% of the load'], correct: 2, explanation: 'Steel on steel gives approximately 0.1–0.3% rolling resistance — about 10x less than rubber on asphalt. This is the fundamental reason railways are so energy-efficient for heavy loads.' },
+  { text: "Why can't conventional railways climb steep gradients?", options: ['Rails would buckle under the strain', 'Low wheel-rail adhesion limits traction on slopes', 'Train engines are not powerful enough', 'Safety regulations prevent it'], correct: 1, explanation: 'The same low friction that makes railways efficient also limits adhesion. With a friction coefficient of only 0.15–0.35, trains struggle to maintain grip on steep slopes, typically limiting gradients to 2–3%.' },
+  { text: 'Compared to road transport, how much less energy does rail typically use per tonne-km?', options: ['About the same', 'About 2x less', 'About 5–10x less', 'About 100x less'], correct: 2, explanation: 'Rail transport typically uses 5–10x less energy per tonne-km than road freight, primarily because of the much lower rolling resistance of steel on steel.' },
+  { text: 'What happens to a continuously welded rail when temperature rises significantly?', options: ['It becomes more flexible', 'It develops compressive stress and risks buckling', 'It expands freely at the ends', 'Nothing — modern steel is temperature-resistant'], correct: 1, explanation: 'CWR cannot expand freely, so temperature increases create compressive stress in the rail. If this exceeds the restraining force from clips and ballast, the rail can buckle — a serious safety risk.' },
+];

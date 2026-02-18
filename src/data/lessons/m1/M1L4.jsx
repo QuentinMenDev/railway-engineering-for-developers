@@ -280,3 +280,10 @@ export default function M1L4({ goTo }) {
     </>
   );
 }
+
+export const quiz = [
+  { text: 'What is the key difference between a geographic and a schematic track representation?', options: ['Geographic uses colour, schematic uses black and white', 'Geographic preserves true spatial positions; schematic preserves topology (connectivity and sequence)', 'Geographic is for engineers, schematic is only for passengers', 'There is no meaningful difference — both show the same information'], correct: 1, explanation: 'Geographic representations show true spatial positions and shapes. Schematics sacrifice geographic accuracy to show the logical structure clearly — what connects to what, in what order.' },
+  { text: 'What representation does a signaller in a control room typically use?', options: ['Geographic (aerial view)', 'Schematic (track diagram)', 'A passenger map', 'A 3D model'], correct: 1, explanation: 'Control room displays show schematic track diagrams with real-time train positions, signal aspects, and point positions. Signallers need topology and connectivity, not geography.' },
+  { text: 'What is a "linear referencing system" (chainage/mileage) used for?', options: ['Measuring train length', 'Identifying any point on the railway by its distance along the track from a datum', 'Calculating ticket prices', 'Timing train journeys'], correct: 1, explanation: 'Chainage or mileage identifies locations by distance from a datum (e.g., "42 miles 17 chains from London"). It bridges the schematic and geographic worlds.' },
+  { text: "What did Harry Beck's 1931 London Underground map pioneer?", options: ['The first map printed in colour', 'Abandoning geographic accuracy in favour of topological clarity for passenger wayfinding', 'Using satellite imagery for transit maps', 'Showing real-time train positions'], correct: 1, explanation: 'Beck abandoned geography, using only horizontal, vertical, and 45-degree lines with equalised station spacing. This topological approach has been imitated by transit systems worldwide.' },
+];

@@ -494,3 +494,10 @@ export default function M5L1({ goTo }) {
     </>
   );
 }
+
+export const quiz = [
+  { text: 'Why is 25 kV AC preferred for mainline electrification?', options: ['It is safer than DC systems', 'Higher voltage means lower current, allowing smaller conductors and wider substation spacing (40–80 km vs 3–5 km for DC)', 'AC motors are cheaper to manufacture', 'It was the first system invented'], correct: 1, explanation: 'Higher voltage means lower current for the same power. This allows lighter overhead wires, smaller conductors, and substations spaced 40–80 km apart instead of every 3–5 km for DC systems.' },
+  { text: 'What voltage does a typical third rail system use?', options: ['25 kV AC', '1,500 V DC', '750 V DC', '400 V AC'], correct: 2, explanation: '750 V DC is the standard third rail voltage used on systems like the UK Southern Region and many metro networks.' },
+  { text: 'What is the main disadvantage of DC traction systems?', options: ['DC motors are unreliable', 'Higher current requires closely-spaced substations (every 3–5 km) and thicker conductors', 'DC cannot power modern trains', 'DC systems are incompatible with signalling'], correct: 1, explanation: 'Lower voltage means higher current for the same power, requiring thicker (heavier, more expensive) conductors and substations every 3–5 km to limit voltage drop.' },
+  { text: 'Why is the rail used as the traction return conductor?', options: ['It provides better electrical insulation', 'Regulations require it for safety reasons', 'It is already a continuous steel conductor running the full length of the route, avoiding a separate return wire', 'It reduces electromagnetic interference'], correct: 2, explanation: 'The running rail is already a continuous steel conductor along the entire route. Using it as the return path avoids the cost and complexity of installing a separate return wire.' },
+];

@@ -75,3 +75,9 @@ export default function M0L3({ goTo }) {
     </>
   );
 }
+
+export const quiz = [
+  { text: 'What software concept best maps to the railway gauge standard?', options: ['Version control', 'API contract / interface specification', 'Load balancer', 'Database schema'], correct: 1, explanation: 'Gauge is a universal interface specification — every vehicle and every piece of track must conform to it, like an API contract between subsystems.' },
+  { text: 'Where do "bugs" most commonly live in railway engineering?', options: ['Inside individual subsystems', 'At the interfaces between disciplines', 'In the operations department', 'In the software systems'], correct: 1, explanation: "Just like in microservice architectures, the most common problems occur at interfaces between disciplines — where one team's output becomes another's input." },
+  { text: "What does the railway's monitoring & observability layer correspond to?", options: ['Signalling', 'Rolling stock diagnostics', 'Telecommunications & SCADA', 'Operations timetabling'], correct: 2, explanation: 'Telecommunications & SCADA provide monitoring and observability — remote sensing, status reporting, real-time data feeds, like Prometheus/Grafana in a software stack.' },
+];

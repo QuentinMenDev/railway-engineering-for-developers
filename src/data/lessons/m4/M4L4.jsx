@@ -210,3 +210,9 @@ export default function M4L4({ goTo }) {
     </>
   );
 }
+
+export const quiz = [
+  { text: 'What is the correct sequence for setting a signalled route?', options: ['Clear signal, then move points, then check route', 'Move points, verify position, check route clear, then clear signal', 'Check route, clear signal, then move points', 'No fixed sequence'], correct: 1, explanation: 'The strict sequence: (1) verify no conflict, (2) move points, (3) detect points locked, (4) verify route clear, (5) clear signal.' },
+  { text: 'What is a "signal overlap"?', options: ['Two signals showing same aspect', 'A safe distance beyond a red signal kept clear in case of overrun', 'A redundant signal', 'Distance between signals on same post'], correct: 1, explanation: 'The overlap keeps track beyond a red signal clear and locked, providing a safety margin if a driver fails to stop exactly.' },
+  { text: 'What type of level crossing uses automatic barriers triggered by approaching trains?', options: ['Manually controlled (MCB)', 'Automatic half-barrier (AHB)', 'User-worked (UWC)', 'Occupation crossing'], correct: 1, explanation: 'AHB crossings use treadles or track circuits to detect trains and lower barriers automatically. Barriers cover only the approach side.' },
+];

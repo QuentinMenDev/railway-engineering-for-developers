@@ -256,3 +256,10 @@ export default function M4L1({ goTo }) {
     </>
   );
 }
+
+export const quiz = [
+  { text: 'What is the fundamental rule of the block system?', options: ['Trains must travel at constant speed', 'Only one train may occupy a block section at a time', 'Signals must change every 60 seconds', 'All blocks must be the same length'], correct: 1, explanation: 'The absolute block system ensures only one train per section. Everything in signalling exists to enforce this rule.' },
+  { text: 'In four-aspect signalling, what does a double yellow signal mean?', options: ['Stop immediately', 'Proceed with caution — next signal is red', 'Preliminary caution — expect next signal to be yellow', 'Proceed at full speed'], correct: 2, explanation: 'Double yellow = preliminary caution. The next signal will be yellow, and the one after that red. This gives enough advance warning for high-speed braking.' },
+  { text: 'What was the original purpose of the semaphore signal?', options: ['To decorate stations', 'To communicate movement authority using visible arm positions', 'To measure wind speed', 'To signal to passengers'], correct: 1, explanation: 'Semaphores use movable arms: horizontal = stop, lowered 45° = clear. They replaced time-interval working which had caused collisions.' },
+  { text: 'What does AWS (Automatic Warning System) do?', options: ['Automatically drives the train', 'Provides audible/visual cab warning when passing signals at caution or danger', 'Controls level crossing barriers', 'Manages station announcements'], correct: 1, explanation: "AWS uses track magnets to trigger cab alerts. If the driver doesn't acknowledge a warning within seconds, brakes apply automatically." },
+];
