@@ -1,14 +1,14 @@
 import React from 'react';
-import getM0Content from './lessonContentM0';
-import getM1Content from './lessonContentM1';
-import getM2Content from './lessonContentM2';
-import getM3Content from './lessonContentM3';
-import getM4Content from './lessonContentM4';
-import getM5Content from './lessonContentM5';
-import getM6Content from './lessonContentM6';
-import getM7Content from './lessonContentM7';
-import getM8Content from './lessonContentM8';
-import getM9Content from './lessonContentM9';
+import getM0Content from './lessons/m0';
+import getM1Content from './lessons/m1';
+import getM2Content from './lessons/m2';
+import getM3Content from './lessons/m3';
+import getM4Content from './lessons/m4';
+import getM5Content from './lessons/m5';
+import getM6Content from './lessons/m6';
+import getM7Content from './lessons/m7';
+import getM8Content from './lessons/m8';
+import getM9Content from './lessons/m9';
 
 // ─── Export ──────────────────────────────────────────────────────────
 
