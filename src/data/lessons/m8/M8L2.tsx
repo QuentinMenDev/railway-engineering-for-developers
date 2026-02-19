@@ -5,6 +5,36 @@ import type { LessonProps, QuizQuestion } from '../../../types';
 export default function M8L2({ goTo }: LessonProps) {
   return (
     <>
+      <figure className="lesson-figure">
+        <div className="cad-symbol">
+          <svg viewBox="0 0 400 120" style={{ width: '100%', maxWidth: '400px' }}>
+            <text x="200" y="14" fill="var(--text-dim)" fontSize="10" fontFamily="JetBrains Mono, monospace" textAnchor="middle">Capacity Constraints — Flat Junction</text>
+            {/* Main line (horizontal) */}
+            <line x1="20" y1="55" x2="380" y2="55" stroke="var(--text-bright)" strokeWidth="2"/>
+            <line x1="20" y1="70" x2="380" y2="70" stroke="var(--text-bright)" strokeWidth="2"/>
+            {/* Branch line diverging */}
+            <line x1="200" y1="55" x2="300" y2="25" stroke="var(--text-bright)" strokeWidth="2"/>
+            <line x1="210" y1="55" x2="310" y2="25" stroke="var(--text-bright)" strokeWidth="2"/>
+            {/* Branch line converging */}
+            <line x1="200" y1="70" x2="300" y2="100" stroke="var(--text-bright)" strokeWidth="2"/>
+            <line x1="210" y1="70" x2="310" y2="100" stroke="var(--text-bright)" strokeWidth="2"/>
+            {/* Conflict point */}
+            <circle cx="205" cy="62" r="12" fill="none" stroke="var(--red)" strokeWidth="1.5" strokeDasharray="3,2"/>
+            <text x="205" y="66" fill="var(--red)" fontSize="7" fontFamily="JetBrains Mono, monospace" textAnchor="middle">conflict</text>
+            {/* Labels */}
+            <text x="40" y="50" fill="var(--text-dim)" fontSize="8" fontFamily="JetBrains Mono, monospace">Up Main →</text>
+            <text x="330" y="80" fill="var(--text-dim)" fontSize="8" fontFamily="JetBrains Mono, monospace">← Down Main</text>
+            <text x="310" y="22" fill="var(--accent)" fontSize="7" fontFamily="JetBrains Mono, monospace">Branch</text>
+            {/* Headway indicator */}
+            <line x1="80" y1="78" x2="160" y2="78" stroke="var(--accent)" strokeWidth="1"/>
+            <polygon points="80,78 86,75 86,81" fill="var(--accent)"/>
+            <polygon points="160,78 154,75 154,81" fill="var(--accent)"/>
+            <text x="120" y="90" fill="var(--accent)" fontSize="7" fontFamily="JetBrains Mono, monospace" textAnchor="middle">min headway</text>
+          </svg>
+        </div>
+        <figcaption>CAD schematic: Flat junction — the classic capacity constraint where diverging/converging routes create conflict points.</figcaption>
+      </figure>
+
       <h3>What Is Capacity?</h3>
       <p>
         Railway capacity is not a single number. It is a complex, context-dependent measure of how
@@ -52,6 +82,13 @@ export default function M8L2({ goTo }: LessonProps) {
         seconds instead of the planned 45, it consumes 15 seconds of the following train's headway,
         and that perturbation propagates backward through every following service.
       </p>
+
+      <figure className="lesson-figure">
+        <div className="image-placeholder">
+          <p>IMAGE NEEDED: Photo of a busy flat junction or station throat showing converging/diverging tracks with multiple trains visible, illustrating the capacity bottleneck concept. Alternatively, a train-graph (time-distance diagram) showing train paths.</p>
+        </div>
+        <figcaption>A complex junction where capacity is constrained — the weakest link determines the capacity of the entire route.</figcaption>
+      </figure>
 
       <h3>UIC Code 406 Capacity Methodology</h3>
       <p>

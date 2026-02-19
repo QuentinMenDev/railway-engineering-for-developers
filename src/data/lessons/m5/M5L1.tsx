@@ -5,6 +5,43 @@ import type { LessonProps, QuizQuestion } from '../../../types';
 export default function M5L1({ goTo }: LessonProps) {
   return (
     <>
+      <div className="cad-symbol-row">
+        <figure className="lesson-figure">
+          <div className="cad-symbol">
+            <svg viewBox="0 0 140 110" style={{ width: '100%', maxWidth: '140px' }}>
+              <text x="70" y="12" fill="var(--text-dim)" fontSize="8" fontFamily="JetBrains Mono, monospace" textAnchor="middle">OLE / Catenary</text>
+              {/* Mast */}
+              <line x1="20" y1="22" x2="20" y2="90" stroke="var(--text-bright)" strokeWidth="1.5"/>
+              {/* Arm */}
+              <line x1="20" y1="28" x2="100" y2="28" stroke="var(--text-bright)" strokeWidth="1"/>
+              {/* Contact wire */}
+              <line x1="40" y1="50" x2="120" y2="50" stroke="var(--accent)" strokeWidth="1.5"/>
+              {/* Dropper */}
+              <line x1="70" y1="28" x2="70" y2="50" stroke="var(--text-dim)" strokeWidth="0.5"/>
+              {/* Rail */}
+              <line x1="30" y1="90" x2="120" y2="90" stroke="var(--text-bright)" strokeWidth="2"/>
+              <text x="70" y="72" fill="var(--text-dim)" fontSize="7" fontFamily="JetBrains Mono, monospace" textAnchor="middle">25 kV AC</text>
+            </svg>
+          </div>
+          <figcaption>OLE catenary</figcaption>
+        </figure>
+        <figure className="lesson-figure">
+          <div className="cad-symbol">
+            <svg viewBox="0 0 140 110" style={{ width: '100%', maxWidth: '140px' }}>
+              <text x="70" y="12" fill="var(--text-dim)" fontSize="8" fontFamily="JetBrains Mono, monospace" textAnchor="middle">Third Rail</text>
+              {/* Running rails */}
+              <line x1="20" y1="50" x2="120" y2="50" stroke="var(--text-bright)" strokeWidth="2"/>
+              <line x1="20" y1="70" x2="120" y2="70" stroke="var(--text-bright)" strokeWidth="2"/>
+              {/* Conductor rail */}
+              <rect x="15" y="75" width="110" height="5" fill="var(--accent)" stroke="var(--accent)" strokeWidth="1" rx="1"/>
+              <text x="70" y="95" fill="var(--accent)" fontSize="7" fontFamily="JetBrains Mono, monospace" textAnchor="middle">conductor rail</text>
+              <text x="70" y="105" fill="var(--text-dim)" fontSize="7" fontFamily="JetBrains Mono, monospace" textAnchor="middle">660–750 V DC</text>
+            </svg>
+          </div>
+          <figcaption>Third rail</figcaption>
+        </figure>
+      </div>
+
       <h3>A Brief History of Railway Electrification</h3>
       <p>
         Railway electrification is not a modern idea. The first electric railway demonstrations
@@ -236,6 +273,13 @@ export default function M5L1({ goTo }: LessonProps) {
         in M5-L3).
       </p>
 
+      <figure className="lesson-figure">
+        <div className="image-placeholder">
+          <p>IMAGE NEEDED: Photo showing 25 kV AC overhead line equipment (OLE) on a mainline railway, with visible catenary wire, contact wire, and mast structures. Contrast with a second photo or split image of a third rail (conductor rail) system.</p>
+        </div>
+        <figcaption>25 kV AC overhead electrification — the global standard for new mainline electrification, allowing substations 40–80 km apart.</figcaption>
+      </figure>
+
       <h3>Third Rail Systems</h3>
       <p>
         In a third rail system, power is delivered through a <strong>conductor rail</strong> mounted
@@ -366,6 +410,13 @@ export default function M5L1({ goTo }: LessonProps) {
         factor requirements, and harmonic emission limits. Multi-system rolling stock must comply
         with this standard for each voltage system under which it operates.
       </Callout>
+
+      <figure className="lesson-figure">
+        <div className="image-placeholder">
+          <p>IMAGE NEEDED: Photo of a third rail (conductor rail) with shoe gear visible on the underside of a train collecting current, or a close-up of the conductor rail alongside the running rails showing the top-contact arrangement.</p>
+        </div>
+        <figcaption>Third rail current collection — shoe gear presses against the conductor rail at track level (750 V DC).</figcaption>
+      </figure>
 
       <h3>Battery and Hydrogen Traction</h3>
       <p>

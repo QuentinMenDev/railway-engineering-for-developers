@@ -5,6 +5,42 @@ import type { LessonProps, QuizQuestion } from '../../../types';
 export default function M4L4({ goTo }: LessonProps) {
   return (
     <>
+      <div className="cad-symbol-row">
+        <figure className="lesson-figure">
+          <div className="cad-symbol">
+            <svg viewBox="0 0 140 100" style={{ width: '100%', maxWidth: '140px' }}>
+              <text x="70" y="12" fill="var(--text-dim)" fontSize="8" fontFamily="JetBrains Mono, monospace" textAnchor="middle">Point Machine</text>
+              {/* Track + diverge */}
+              <line x1="10" y1="40" x2="130" y2="40" stroke="var(--text-bright)" strokeWidth="1.5"/>
+              <line x1="40" y1="40" x2="100" y2="65" stroke="var(--text-bright)" strokeWidth="1.5"/>
+              {/* Machine box */}
+              <rect x="50" y="46" width="18" height="12" fill="var(--bg-hover)" stroke="var(--accent)" strokeWidth="1" rx="1"/>
+              <text x="59" y="55" fill="var(--accent)" fontSize="7" fontFamily="JetBrains Mono, monospace" textAnchor="middle">M</text>
+              <text x="70" y="80" fill="var(--text-dim)" fontSize="7" fontFamily="JetBrains Mono, monospace" textAnchor="middle">move + detect</text>
+            </svg>
+          </div>
+          <figcaption>Point machine symbol</figcaption>
+        </figure>
+        <figure className="lesson-figure">
+          <div className="cad-symbol">
+            <svg viewBox="0 0 140 100" style={{ width: '100%', maxWidth: '140px' }}>
+              <text x="70" y="12" fill="var(--text-dim)" fontSize="8" fontFamily="JetBrains Mono, monospace" textAnchor="middle">Level Crossing</text>
+              {/* Track (vertical) */}
+              <line x1="70" y1="22" x2="70" y2="85" stroke="var(--text-bright)" strokeWidth="2"/>
+              {/* Road (horizontal) */}
+              <rect x="15" y="42" width="110" height="14" fill="var(--bg-hover)" stroke="var(--text-dim)" strokeWidth="1" rx="1"/>
+              {/* Barriers */}
+              <line x1="30" y1="40" x2="30" y2="28" stroke="var(--red)" strokeWidth="1.5"/>
+              <line x1="30" y1="28" x2="60" y2="28" stroke="var(--red)" strokeWidth="1.5"/>
+              <line x1="110" y1="58" x2="110" y2="70" stroke="var(--red)" strokeWidth="1.5"/>
+              <line x1="110" y1="70" x2="80" y2="70" stroke="var(--red)" strokeWidth="1.5"/>
+              <text x="70" y="95" fill="var(--text-dim)" fontSize="7" fontFamily="JetBrains Mono, monospace" textAnchor="middle">half-barrier</text>
+            </svg>
+          </div>
+          <figcaption>Level crossing symbol</figcaption>
+        </figure>
+      </div>
+
       <h3>Point Machines</h3>
       <p>
         A <strong>point machine</strong> is the electromechanical device that moves switch
@@ -41,6 +77,13 @@ export default function M4L4({ goTo }: LessonProps) {
           contact over the full switch length.
         </li>
       </ul>
+
+      <figure className="lesson-figure">
+        <div className="image-placeholder">
+          <p>IMAGE NEEDED: Photo of a point machine (e.g., HW clamp lock type) installed beside the track at a set of switches/points, showing the mechanical linkage to the switch blades.</p>
+        </div>
+        <figcaption>A point machine installed at the trackside — the electromechanical device that moves switch blades between positions.</figcaption>
+      </figure>
 
       <h3>Detection and Proving</h3>
       <p>
@@ -137,6 +180,13 @@ export default function M4L4({ goTo }: LessonProps) {
         the track for other movements once the approaching train has had sufficient time to
         stop.
       </p>
+
+      <figure className="lesson-figure">
+        <div className="image-placeholder">
+          <p>IMAGE NEEDED: Photo of an automatic half-barrier (AHB) level crossing with barriers lowered and warning lights flashing as a train approaches, showing the road/rail intersection.</p>
+        </div>
+        <figcaption>An automatic half-barrier level crossing — one of the highest-risk locations on the railway network.</figcaption>
+      </figure>
 
       <h3>Level Crossings</h3>
       <p>

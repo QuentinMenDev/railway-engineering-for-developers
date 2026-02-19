@@ -5,6 +5,43 @@ import type { LessonProps, QuizQuestion } from '../../../types';
 export default function M9L1({ goTo }: LessonProps) {
   return (
     <>
+      <figure className="lesson-figure">
+        <div className="cad-symbol">
+          <svg viewBox="0 0 420 100" style={{ width: '100%', maxWidth: '420px' }}>
+            <text x="210" y="14" fill="var(--text-dim)" fontSize="10" fontFamily="JetBrains Mono, monospace" textAnchor="middle">GRIP Stages — Project Lifecycle</text>
+            {/* Stage boxes */}
+            {[
+              { x: 10, label: '1', name: 'Output', color: 'var(--text-dim)' },
+              { x: 65, label: '2', name: 'Feasib.', color: 'var(--text-dim)' },
+              { x: 120, label: '3', name: 'Option', color: 'var(--blue)' },
+              { x: 175, label: '4', name: 'Single', color: 'var(--blue)' },
+              { x: 230, label: '5', name: 'Detail', color: 'var(--accent)' },
+              { x: 285, label: '6', name: 'Build', color: 'var(--accent)' },
+              { x: 340, label: '7', name: 'T&C', color: 'var(--accent-secondary)' },
+              { x: 395, label: '8', name: 'Close', color: 'var(--accent-secondary)' },
+            ].map((stage, i) => (
+              <g key={i}>
+                <rect x={stage.x} y="28" width="45" height="30" fill="var(--bg-hover)" stroke={stage.color} strokeWidth="1.5" rx="3"/>
+                <text x={stage.x + 22} y="40" fill={stage.color} fontSize="9" fontFamily="JetBrains Mono, monospace" textAnchor="middle" fontWeight="bold">{stage.label}</text>
+                <text x={stage.x + 22} y="52" fill={stage.color} fontSize="7" fontFamily="JetBrains Mono, monospace" textAnchor="middle">{stage.name}</text>
+                {i < 7 && <line x1={stage.x + 45} y1="43" x2={stage.x + 55} y2="43" stroke="var(--text-dim)" strokeWidth="1"/>}
+                {i < 7 && <polygon points={`${stage.x + 55},43 ${stage.x + 51},40 ${stage.x + 51},46`} fill="var(--text-dim)"/>}
+              </g>
+            ))}
+            {/* Phase labels below */}
+            <line x1="10" y1="65" x2="155" y2="65" stroke="var(--text-dim)" strokeWidth="0.5"/>
+            <text x="82" y="78" fill="var(--text-dim)" fontSize="7" fontFamily="JetBrains Mono, monospace" textAnchor="middle">Define &amp; Select</text>
+            <line x1="175" y1="65" x2="320" y2="65" stroke="var(--accent)" strokeWidth="0.5"/>
+            <text x="247" y="78" fill="var(--accent)" fontSize="7" fontFamily="JetBrains Mono, monospace" textAnchor="middle">Design &amp; Build</text>
+            <line x1="340" y1="65" x2="440" y2="65" stroke="var(--accent-secondary)" strokeWidth="0.5"/>
+            <text x="385" y="78" fill="var(--accent-secondary)" fontSize="7" fontFamily="JetBrains Mono, monospace" textAnchor="middle">Deliver</text>
+            {/* Gate reviews */}
+            <text x="210" y="92" fill="var(--text-dim)" fontSize="7" fontFamily="JetBrains Mono, monospace" textAnchor="middle">▲ gate reviews between stages</text>
+          </svg>
+        </div>
+        <figcaption>CAD diagram: GRIP (Governance for Railway Investment Projects) — the 8-stage lifecycle for UK railway projects.</figcaption>
+      </figure>
+
       <h3>The Stages of a Railway Project</h3>
       <p>
         A railway project does not begin with design and end with construction. It follows a
@@ -33,6 +70,13 @@ export default function M9L1({ goTo }: LessonProps) {
         a project follows GRIP or PACE, the underlying principle is the same: progressively commit
         resources only as uncertainty reduces and confidence in the solution grows.
       </p>
+
+      <figure className="lesson-figure">
+        <div className="image-placeholder">
+          <p>IMAGE NEEDED: Photo of a railway construction site showing active engineering works — e.g., track laying, OLE mast installation, or major station redevelopment. Should convey the scale and complexity of a railway project in the construction phase.</p>
+        </div>
+        <figcaption>A railway project in the construction phase — years of planning converge into physical reality on the ground.</figcaption>
+      </figure>
 
       <h3>GRIP Stages in Detail</h3>
       <p>

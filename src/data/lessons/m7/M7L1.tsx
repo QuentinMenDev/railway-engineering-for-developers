@@ -5,6 +5,39 @@ import type { LessonProps, QuizQuestion } from '../../../types';
 export default function M7L1({ goTo }: LessonProps) {
   return (
     <>
+      <figure className="lesson-figure">
+        <div className="cad-symbol">
+          <svg viewBox="0 0 320 90" style={{ width: '100%', maxWidth: '320px' }}>
+            <text x="160" y="14" fill="var(--text-dim)" fontSize="10" fontFamily="JetBrains Mono, monospace" textAnchor="middle">GSM-R Network</text>
+            {/* Train */}
+            <rect x="10" y="30" width="50" height="16" fill="var(--text-dim)" stroke="var(--text-bright)" strokeWidth="1" rx="2"/>
+            <text x="35" y="41" fill="var(--bg)" fontSize="7" fontFamily="JetBrains Mono, monospace" textAnchor="middle">Train</text>
+            {/* Radio */}
+            <line x1="60" y1="38" x2="90" y2="38" stroke="var(--blue)" strokeWidth="1" strokeDasharray="3,2"/>
+            <text x="75" y="32" fill="var(--blue)" fontSize="6" fontFamily="JetBrains Mono, monospace" textAnchor="middle">radio</text>
+            {/* BTS */}
+            <rect x="90" y="30" width="35" height="16" fill="var(--bg-hover)" stroke="var(--blue)" strokeWidth="1" rx="2"/>
+            <text x="107" y="41" fill="var(--blue)" fontSize="7" fontFamily="JetBrains Mono, monospace" textAnchor="middle">BTS</text>
+            <line x1="125" y1="38" x2="140" y2="38" stroke="var(--text-dim)" strokeWidth="1"/>
+            {/* BSC */}
+            <rect x="140" y="30" width="35" height="16" fill="var(--bg-hover)" stroke="var(--blue)" strokeWidth="1" rx="2"/>
+            <text x="157" y="41" fill="var(--blue)" fontSize="7" fontFamily="JetBrains Mono, monospace" textAnchor="middle">BSC</text>
+            <line x1="175" y1="38" x2="190" y2="38" stroke="var(--text-dim)" strokeWidth="1"/>
+            {/* MSC */}
+            <rect x="190" y="30" width="35" height="16" fill="var(--bg-hover)" stroke="var(--accent)" strokeWidth="1" rx="2"/>
+            <text x="207" y="41" fill="var(--accent)" fontSize="7" fontFamily="JetBrains Mono, monospace" textAnchor="middle">MSC</text>
+            <line x1="225" y1="38" x2="240" y2="38" stroke="var(--text-dim)" strokeWidth="1"/>
+            {/* Control */}
+            <rect x="240" y="30" width="65" height="16" fill="var(--bg-hover)" stroke="var(--accent-secondary)" strokeWidth="1" rx="2"/>
+            <text x="272" y="41" fill="var(--accent-secondary)" fontSize="7" fontFamily="JetBrains Mono, monospace" textAnchor="middle">Control Centre</text>
+            {/* Fibre backbone */}
+            <line x1="90" y1="55" x2="305" y2="55" stroke="var(--accent-secondary)" strokeWidth="1.5"/>
+            <text x="200" y="68" fill="var(--accent-secondary)" fontSize="7" fontFamily="JetBrains Mono, monospace" textAnchor="middle">fibre backbone</text>
+          </svg>
+        </div>
+        <figcaption>Schematic: GSM-R — cab radio connects via base stations (BTS) and controllers (BSC/MSC) to control centres over fibre.</figcaption>
+      </figure>
+
       <h3>A Brief History of Railway Communications</h3>
       <p>
         Communication has been essential to railway safety since the very earliest lines. The first
@@ -34,6 +67,13 @@ export default function M7L1({ goTo }: LessonProps) {
         in many areas, and were specific to individual countries — a train crossing from France into
         Belgium had to switch to entirely different radio equipment.
       </p>
+
+      <figure className="lesson-figure">
+        <div className="image-placeholder">
+          <p>IMAGE NEEDED: Photo of a GSM-R radio mast or base station alongside a railway line, or a photo of a cab radio unit inside a train driver's cab showing the GSM-R handset/display.</p>
+        </div>
+        <figcaption>GSM-R infrastructure — dedicated railway radio providing safety-critical voice and data communication along the track corridor.</figcaption>
+      </figure>
 
       <h3>The Birth of GSM-R</h3>
       <p>

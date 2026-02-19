@@ -60,6 +60,13 @@ export default function M0L2({ goTo }: LessonProps) {
         </li>
       </ol>
 
+      <figure className="lesson-figure">
+        <div className="image-placeholder">
+          <p>IMAGE NEEDED: Aerial or wide-angle photo of a busy railway junction or station showing multiple subsystems visibly at work — tracks, overhead wires, signals, platforms, and a train. Should convey the complexity of a "system of systems."</p>
+        </div>
+        <figcaption>A busy railway node where multiple subsystems converge — track, signalling, electrification, structures, and rolling stock all working together.</figcaption>
+      </figure>
+
       <h3>Infrastructure Manager vs Train Operating Company</h3>
       <p>
         Most modern railways separate the <strong>infrastructure manager</strong> (who owns and

@@ -5,6 +5,31 @@ import type { LessonProps, QuizQuestion } from '../../../types';
 export default function M7L2({ goTo }: LessonProps) {
   return (
     <>
+      <figure className="lesson-figure">
+        <div className="cad-symbol">
+          <svg viewBox="0 0 280 100" style={{ width: '100%', maxWidth: '280px' }}>
+            <text x="140" y="14" fill="var(--text-dim)" fontSize="10" fontFamily="JetBrains Mono, monospace" textAnchor="middle">Fibre Ring Topology</text>
+            {/* Nodes */}
+            <rect x="15" y="35" width="45" height="18" fill="var(--bg-hover)" stroke="var(--accent)" strokeWidth="1" rx="2"/>
+            <text x="37" y="47" fill="var(--accent)" fontSize="7" fontFamily="JetBrains Mono, monospace" textAnchor="middle">Node A</text>
+            <rect x="117" y="22" width="45" height="18" fill="var(--bg-hover)" stroke="var(--accent)" strokeWidth="1" rx="2"/>
+            <text x="139" y="34" fill="var(--accent)" fontSize="7" fontFamily="JetBrains Mono, monospace" textAnchor="middle">Node B</text>
+            <rect x="220" y="35" width="45" height="18" fill="var(--bg-hover)" stroke="var(--accent)" strokeWidth="1" rx="2"/>
+            <text x="242" y="47" fill="var(--accent)" fontSize="7" fontFamily="JetBrains Mono, monospace" textAnchor="middle">Node C</text>
+            <rect x="117" y="55" width="45" height="18" fill="var(--bg-hover)" stroke="var(--accent)" strokeWidth="1" rx="2"/>
+            <text x="139" y="67" fill="var(--accent)" fontSize="7" fontFamily="JetBrains Mono, monospace" textAnchor="middle">Node D</text>
+            {/* Ring connections */}
+            <line x1="60" y1="40" x2="117" y2="33" stroke="var(--accent-secondary)" strokeWidth="1.5"/>
+            <line x1="162" y1="33" x2="220" y2="40" stroke="var(--accent-secondary)" strokeWidth="1.5"/>
+            <line x1="220" y1="48" x2="162" y2="60" stroke="var(--accent-secondary)" strokeWidth="1.5"/>
+            <line x1="117" y1="60" x2="60" y2="48" stroke="var(--accent-secondary)" strokeWidth="1.5"/>
+            <text x="140" y="50" fill="var(--accent-secondary)" fontSize="7" fontFamily="JetBrains Mono, monospace" textAnchor="middle">ring</text>
+            <text x="140" y="88" fill="var(--text-dim)" fontSize="7" fontFamily="JetBrains Mono, monospace" textAnchor="middle">resilient: survives single fibre break</text>
+          </svg>
+        </div>
+        <figcaption>Schematic: Fibre optic network in resilient ring topology — if one link fails, traffic reroutes the other way.</figcaption>
+      </figure>
+
       <h3>The Railway Fibre Backbone</h3>
       <p>
         Modern railways are underlaid by extensive <strong>fibre optic networks</strong> that run
@@ -69,6 +94,13 @@ export default function M7L2({ goTo }: LessonProps) {
         network to scale efficiently: adding a new CCTV camera at a station only affects the
         local access switch and its uplink to the distribution layer, without impacting the core.
       </p>
+
+      <figure className="lesson-figure">
+        <div className="image-placeholder">
+          <p>IMAGE NEEDED: Photo of fibre optic cable trough running alongside railway track, or a railway equipment room showing fibre patch panels, Ethernet switches, and DWDM equipment in standard rack cabinets.</p>
+        </div>
+        <figcaption>Railway fibre backbone — cables running alongside the track carry signalling, CCTV, SCADA, and communication data at gigabit speeds.</figcaption>
+      </figure>
 
       <h3>DWDM and CWDM on Railway Fibre</h3>
       <p>

@@ -6,6 +6,27 @@ export default function M0L1({ goTo }: LessonProps) {
   return (
     <>
       <h3>The Physics of Steel on Steel</h3>
+
+      <figure className="lesson-figure">
+        <div className="cad-symbol">
+          <svg viewBox="0 0 300 80" style={{ width: '100%', maxWidth: '300px' }}>
+            {/* Simple I-beam rail symbol */}
+            <rect x="55" y="8" width="30" height="6" fill="var(--text-dim)" stroke="var(--text-bright)" strokeWidth="1.5"/>
+            <rect x="65" y="14" width="10" height="30" fill="var(--text-dim)" stroke="var(--text-bright)" strokeWidth="1.5"/>
+            <rect x="50" y="44" width="40" height="6" fill="var(--text-dim)" stroke="var(--text-bright)" strokeWidth="1.5"/>
+            {/* Labels */}
+            <text x="100" y="15" fill="var(--accent)" fontSize="10" fontFamily="JetBrains Mono, monospace">← head</text>
+            <text x="100" y="34" fill="var(--accent)" fontSize="10" fontFamily="JetBrains Mono, monospace">← web</text>
+            <text x="100" y="52" fill="var(--accent)" fontSize="10" fontFamily="JetBrains Mono, monospace">← foot</text>
+            {/* Rolling resistance comparison */}
+            <text x="200" y="20" fill="var(--text-dim)" fontSize="9" fontFamily="JetBrains Mono, monospace">steel/steel: 0.1–0.3%</text>
+            <text x="200" y="35" fill="var(--text-dim)" fontSize="9" fontFamily="JetBrains Mono, monospace">rubber/road: 1–2%</text>
+            <text x="200" y="55" fill="var(--accent)" fontSize="9" fontFamily="JetBrains Mono, monospace">≈ 10× advantage</text>
+          </svg>
+        </div>
+        <figcaption>Schematic: Simplified rail I-beam cross-section (head, web, foot) and the rolling resistance advantage of steel on steel.</figcaption>
+      </figure>
+
       <p>
         Railways work because of a single, elegant physical fact: a steel wheel rolling on a
         steel rail produces extraordinarily low friction. The rolling resistance coefficient is
@@ -19,6 +40,13 @@ export default function M0L1({ goTo }: LessonProps) {
         passenger transport, rail is 3–5 times more efficient than private cars and dramatically
         better than domestic aviation for comparable distances.
       </p>
+
+      <figure className="lesson-figure">
+        <div className="image-placeholder">
+          <p>IMAGE NEEDED: Close-up photo of a steel train wheel on a steel rail, showing the contact patch and the shiny wear strip on the rail head — illustrating the steel-on-steel interface that makes railways efficient.</p>
+        </div>
+        <figcaption>Steel wheel on steel rail — the fundamental low-friction interface that makes railways possible.</figcaption>
+      </figure>
 
       <h3>The Adhesion Trade-Off</h3>
       <p>

@@ -5,6 +5,32 @@ import type { LessonProps, QuizQuestion } from '../../../types';
 export default function M5L2({ goTo }: LessonProps) {
   return (
     <>
+      <figure className="lesson-figure">
+        <div className="cad-symbol">
+          <svg viewBox="0 0 320 110" style={{ width: '100%', maxWidth: '320px' }}>
+            <text x="160" y="14" fill="var(--text-dim)" fontSize="10" fontFamily="JetBrains Mono, monospace" textAnchor="middle">Catenary System</text>
+            {/* Two masts */}
+            <line x1="30" y1="25" x2="30" y2="90" stroke="var(--text-bright)" strokeWidth="1.5"/>
+            <line x1="290" y1="25" x2="290" y2="90" stroke="var(--text-bright)" strokeWidth="1.5"/>
+            {/* Catenary wire (curved) */}
+            <path d="M 50,30 Q 160,55 270,30" fill="none" stroke="var(--text-dim)" strokeWidth="1"/>
+            <text x="160" y="52" fill="var(--text-dim)" fontSize="7" fontFamily="JetBrains Mono, monospace" textAnchor="middle">catenary wire</text>
+            {/* Droppers */}
+            <line x1="100" y1="36" x2="100" y2="60" stroke="var(--text-dim)" strokeWidth="0.5"/>
+            <line x1="160" y1="45" x2="160" y2="60" stroke="var(--text-dim)" strokeWidth="0.5"/>
+            <line x1="220" y1="36" x2="220" y2="60" stroke="var(--text-dim)" strokeWidth="0.5"/>
+            {/* Contact wire (straight) */}
+            <line x1="50" y1="60" x2="270" y2="60" stroke="var(--accent)" strokeWidth="1.5"/>
+            <text x="285" y="58" fill="var(--accent)" fontSize="7" fontFamily="JetBrains Mono, monospace">contact</text>
+            {/* Rail */}
+            <line x1="20" y1="90" x2="300" y2="90" stroke="var(--text-bright)" strokeWidth="2"/>
+            {/* Caption */}
+            <text x="160" y="105" fill="var(--text-dim)" fontSize="7" fontFamily="JetBrains Mono, monospace" textAnchor="middle">contact wire staggered ±200 mm for even pantograph wear</text>
+          </svg>
+        </div>
+        <figcaption>Schematic: Catenary system — catenary wire supports contact wire via droppers, keeping it level for the pantograph.</figcaption>
+      </figure>
+
       <h3>Catenary System Anatomy</h3>
       <p>
         The overhead line equipment (OLE) that delivers power to trains is far more than a simple
@@ -225,6 +251,13 @@ export default function M5L2({ goTo }: LessonProps) {
         pantograph transitions from one tensioning section to the next.
       </p>
 
+      <figure className="lesson-figure">
+        <div className="image-placeholder">
+          <p>IMAGE NEEDED: Close-up photo of a catenary system showing the messenger wire, droppers, contact wire, and registration arm at a mast. Ideally annotated or with visible components clearly distinct.</p>
+        </div>
+        <figcaption>Catenary system anatomy — messenger wire above, contact wire below, connected by droppers, held in position by registration arms.</figcaption>
+      </figure>
+
       <h3>Pantograph Types and Design</h3>
       <p>
         The <strong>pantograph</strong> is the train's current collector — a spring-loaded,
@@ -395,6 +428,13 @@ export default function M5L2({ goTo }: LessonProps) {
         the East Coast Main Line through exposed sections of Yorkshire are particularly
         vulnerable.
       </p>
+
+      <figure className="lesson-figure">
+        <div className="image-placeholder">
+          <p>IMAGE NEEDED: Photo of a raised single-arm (Z-type) pantograph pressing against the overhead contact wire, showing the carbon strip contact area. Bonus if arcing is slightly visible or the pantograph is at speed.</p>
+        </div>
+        <figcaption>A single-arm pantograph collecting current from the overhead contact wire — the interface between train and power supply.</figcaption>
+      </figure>
 
       <h3>Neutral Sections and Phase Breaks</h3>
       <p>
