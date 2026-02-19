@@ -41,6 +41,16 @@ export default function IndexPage({ goTo }: { goTo: GoToFn }) {
         ))}
       </div>
 
+      <div className="section-label">Reference</div>
+      <div className="module-card" onClick={() => goTo('symbols')}>
+        <span className="card-num">◇</span>
+        <div className="card-content">
+          <div className="card-title">Symbol Lexicon</div>
+          <div className="card-desc">Every schematic symbol used across all 10 modules — at a glance, with links back to lessons</div>
+        </div>
+        <span className="card-arrow">→</span>
+      </div>
+
       <h3>The Developer's Mental Model</h3>
       <table>
         <thead><tr><th>Software Concept</th><th>Railway Equivalent</th></tr></thead>

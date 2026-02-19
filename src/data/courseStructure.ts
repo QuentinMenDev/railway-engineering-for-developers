@@ -88,7 +88,7 @@ export const courseModules: CourseModulesMap = {
 export const referenceModules: Lesson[] = [];
 
 export function getAllPages(): string[] {
-  const pages: string[] = ['index'];
+  const pages: string[] = ['index', 'symbols'];
   Object.values(courseModules).forEach(mod => {
     mod.lessons.forEach(l => pages.push(l.id));
   });

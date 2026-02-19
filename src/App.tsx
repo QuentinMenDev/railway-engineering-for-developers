@@ -3,6 +3,7 @@ import './styles/theme.css';
 import Header from './components/Header';
 import Sidebar from './components/Sidebar';
 import IndexPage from './components/IndexPage';
+import SymbolLexicon from './components/SymbolLexicon';
 import LessonPage from './components/LessonPage';
 import { useProgress } from './hooks/useProgress';
 import { resolvePageId } from './data/courseStructure';
@@ -59,6 +60,10 @@ export default function App() {
   const renderPage = () => {
     if (currentPage === 'index') {
       return <IndexPage goTo={goTo} />;
+    }
+
+    if (currentPage === 'symbols') {
+      return <SymbolLexicon goTo={goTo} />;
     }
 
     // Course lessons

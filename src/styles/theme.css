@@ -241,6 +241,28 @@ tbody tr:hover { background: var(--bg-hover); }
 .cad-symbol-row { display: flex; gap: 16px; justify-content: center; align-items: flex-end; margin: 24px 0; flex-wrap: wrap; }
 .cad-symbol-row .lesson-figure { margin: 0; flex: 1; min-width: 120px; max-width: 220px; }
 
+/* Symbol Lexicon */
+.lexicon-header { margin-bottom: 40px; padding-bottom: 32px; border-bottom: 1px solid var(--border); }
+.lexicon-header h2 { font-family: 'DM Serif Display', Georgia, serif; font-size: 2rem; color: var(--text-bright); margin-bottom: 12px; line-height: 1.25; }
+.lexicon-intro { font-size: 0.95rem; color: var(--text-dim); max-width: 560px; }
+.lexicon-toc { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 32px; }
+.lexicon-toc-chip { font-family: 'JetBrains Mono', monospace; font-size: 0.72rem; padding: 5px 12px; background: var(--bg-raised); border: 1px solid var(--border); border-radius: 20px; color: var(--text-dim); cursor: pointer; transition: all 0.15s ease; user-select: none; }
+.lexicon-toc-chip:hover { border-color: var(--accent-dim); color: var(--accent); background: var(--accent-glow); }
+.lexicon-group { margin-bottom: 40px; }
+.lexicon-group-title { display: flex; align-items: center; gap: 12px; margin-bottom: 20px; padding-top: 8px; }
+.lexicon-group-num { font-family: 'JetBrains Mono', monospace; font-size: 0.72rem; font-weight: 500; width: 26px; height: 26px; border-radius: 50%; display: flex; align-items: center; justify-content: center; background: var(--accent-glow); border: 1px solid var(--accent-dim); color: var(--accent); flex-shrink: 0; }
+.lexicon-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 16px; }
+.lexicon-card { display: flex; gap: 16px; padding: 16px; background: var(--bg-raised); border: 1px solid var(--border); border-radius: 8px; transition: border-color 0.15s ease; }
+.lexicon-card:hover { border-color: var(--border-light); }
+.lexicon-card-symbol { flex-shrink: 0; width: 120px; display: flex; align-items: center; justify-content: center; padding: 4px; }
+.lexicon-card-symbol svg { max-width: 100%; height: auto; }
+.lexicon-card-body { flex: 1; min-width: 0; }
+.lexicon-card-name { font-weight: 600; font-size: 0.9rem; color: var(--text-bright); margin-bottom: 4px; }
+.lexicon-card-desc { font-size: 0.8rem; color: var(--text-dim); line-height: 1.45; margin-bottom: 8px; }
+.lexicon-card-link { font-family: 'JetBrains Mono', monospace; font-size: 0.72rem; color: var(--accent); cursor: pointer; transition: color 0.15s; }
+.lexicon-card-link:hover { color: var(--text-bright); text-decoration: underline; }
+.lexicon-footer { margin-top: 48px; padding-top: 24px; border-top: 1px solid var(--border); font-size: 0.85rem; color: var(--text-dim); }
+
 /* Responsive */
 @media (max-width: 900px) {
   .sidebar { position: fixed; top: var(--header-h); left: 0; bottom: 0; z-index: 90; transform: translateX(-100%); box-shadow: 4px 0 24px rgba(0,0,0,0.4); }
@@ -254,6 +276,9 @@ tbody tr:hover { background: var(--bg-hover); }
   .header-subtitle { display: none; }
   .nav-lesson { padding-left: 40px; }
   .quiz-option { padding: 8px 12px; }
+  .lexicon-grid { grid-template-columns: 1fr; }
+  .lexicon-card { flex-direction: column; align-items: center; text-align: center; }
+  .lexicon-card-symbol { width: 160px; }
 }
 
 @media print {

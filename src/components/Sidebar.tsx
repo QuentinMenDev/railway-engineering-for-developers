@@ -52,6 +52,14 @@ export default function Sidebar({ currentPage, goTo, progress, isModuleComplete,
         <span className="nav-label">Overview & Index</span>
       </div>
 
+      <div
+        className={`nav-item${currentPage === 'symbols' ? ' active' : ''}`}
+        onClick={() => { goTo('symbols'); onClose(); }}
+      >
+        <span className="nav-number">◇</span>
+        <span className="nav-label">Symbol Lexicon</span>
+      </div>
+
       <div className="nav-section-label">Modules</div>
       {Object.entries(courseModules).map(([modId, mod]) => {
         const done = mod.lessons.filter(l => progress.lessons[l.id]).length;
