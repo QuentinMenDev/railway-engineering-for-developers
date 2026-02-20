@@ -1,3 +1,4 @@
+import { PointMachine, LevelCrossing } from '../../../components/symbols';
 import { Callout } from '../../components/Callout';
 import { Connections } from '../../components/Connections';
 import type { LessonProps, QuizQuestion } from '../../../types';
@@ -8,34 +9,13 @@ export default function M4L4({ goTo }: LessonProps) {
       <div className="cad-symbol-row">
         <figure className="lesson-figure">
           <div className="cad-symbol">
-            <svg viewBox="0 0 140 100" style={{ width: '100%', maxWidth: '140px' }}>
-              <text x="70" y="12" fill="var(--text-dim)" fontSize="8" fontFamily="JetBrains Mono, monospace" textAnchor="middle">Point Machine</text>
-              {/* Track + diverge */}
-              <line x1="10" y1="40" x2="130" y2="40" stroke="var(--text-bright)" strokeWidth="1.5"/>
-              <line x1="40" y1="40" x2="100" y2="65" stroke="var(--text-bright)" strokeWidth="1.5"/>
-              {/* Machine box */}
-              <rect x="50" y="46" width="18" height="12" fill="var(--bg-hover)" stroke="var(--accent)" strokeWidth="1" rx="1"/>
-              <text x="59" y="55" fill="var(--accent)" fontSize="7" fontFamily="JetBrains Mono, monospace" textAnchor="middle">M</text>
-              <text x="70" y="80" fill="var(--text-dim)" fontSize="7" fontFamily="JetBrains Mono, monospace" textAnchor="middle">move + detect</text>
-            </svg>
+            <PointMachine style={{ maxWidth: '140px' }} />
           </div>
           <figcaption>Point machine symbol</figcaption>
         </figure>
         <figure className="lesson-figure">
           <div className="cad-symbol">
-            <svg viewBox="0 0 140 100" style={{ width: '100%', maxWidth: '140px' }}>
-              <text x="70" y="12" fill="var(--text-dim)" fontSize="8" fontFamily="JetBrains Mono, monospace" textAnchor="middle">Level Crossing</text>
-              {/* Track (vertical) */}
-              <line x1="70" y1="22" x2="70" y2="85" stroke="var(--text-bright)" strokeWidth="2"/>
-              {/* Road (horizontal) */}
-              <rect x="15" y="42" width="110" height="14" fill="var(--bg-hover)" stroke="var(--text-dim)" strokeWidth="1" rx="1"/>
-              {/* Barriers */}
-              <line x1="30" y1="40" x2="30" y2="28" stroke="var(--red)" strokeWidth="1.5"/>
-              <line x1="30" y1="28" x2="60" y2="28" stroke="var(--red)" strokeWidth="1.5"/>
-              <line x1="110" y1="58" x2="110" y2="70" stroke="var(--red)" strokeWidth="1.5"/>
-              <line x1="110" y1="70" x2="80" y2="70" stroke="var(--red)" strokeWidth="1.5"/>
-              <text x="70" y="95" fill="var(--text-dim)" fontSize="7" fontFamily="JetBrains Mono, monospace" textAnchor="middle">half-barrier</text>
-            </svg>
+            <LevelCrossing style={{ maxWidth: '140px' }} />
           </div>
           <figcaption>Level crossing symbol</figcaption>
         </figure>
