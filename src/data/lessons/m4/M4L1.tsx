@@ -42,6 +42,23 @@ export default function M4L1({ goTo }: LessonProps) {
         completing the cycle.
       </p>
 
+      <h3>Permissive Block Working</h3>
+      <p>
+        The absolute block rule — one train per section — is not universal. Under
+        <strong> permissive block working</strong>, more than one train may occupy a section
+        at the same time, provided specific conditions are met. This is used in certain
+        situations: for example, a following train may be permitted to enter an occupied
+        section at restricted speed to couple to a standing train, or freight trains on
+        long single-track sections may follow each other into the same block under
+        specific rules. In North American practice, permissive signals (identifiable by a
+        number plate on the signal mast) allow a train to pass at restricted speed even
+        when displaying a stop aspect, whereas absolute signals (no number plate) must
+        never be passed at danger without specific authority. In the UK, the equivalent
+        mechanism uses <strong>calling-on signals</strong> — subsidiary signals that
+        authorise a train to pass a main signal at danger and enter an occupied section
+        at very low speed.
+      </p>
+
       <h3>Block Instrument Types</h3>
       <p>
         Several types of block telegraph instrument have been used historically, each with
@@ -146,8 +163,11 @@ export default function M4L1({ goTo }: LessonProps) {
       <p>
         Before colour lights, railways used mechanical <strong>semaphore</strong> signals —
         pivoting arms on tall posts, operated by wire from the signal box lever frame.
-        Horizontal arm = danger; angled down at 45° = clear. A few semaphore-signalled lines
-        survive in the UK and are being progressively replaced.
+        Horizontal arm = danger; arm moved 45° from horizontal = clear. Early signals
+        used <strong>lower quadrant</strong> (arm drops below horizontal), but
+        <strong> upper quadrant</strong> (arm raised above horizontal) became the British
+        standard from the 1920s and is what most surviving UK semaphores use. A few
+        semaphore-signalled lines survive and are being progressively replaced.
       </p>
       <p>
         Semaphore signals came in two principal types: <strong>home signals</strong> (with a
@@ -181,6 +201,26 @@ export default function M4L1({ goTo }: LessonProps) {
         <li><strong>Banner repeaters:</strong> A miniature semaphore arm mounted on a post, repeating the aspect of the signal ahead. Used in locations where a full repeater is not practical.</li>
       </ul>
 
+      <h3>Controlled vs Automatic Signals</h3>
+      <p>
+        An important distinction exists between <strong>controlled signals</strong> and
+        <strong> automatic signals</strong>. A controlled signal is operated by the signaller
+        (or the interlocking on their behalf) — it will not clear unless the signaller sets
+        a route, and the interlocking verifies that all conditions are met. A controlled
+        signal returned to danger after a train passes is held at red until the next route
+        is deliberately set.
+      </p>
+      <p>
+        An <strong>automatic signal</strong>, by contrast, changes aspect purely based on
+        track circuit occupation ahead of it — no signaller intervention is needed. When
+        the block section ahead clears, the signal steps up through its aspects
+        automatically. Automatic signals are widely used on plain line (away from junctions
+        and stations) to increase capacity on busy routes: they allow closer signal spacing
+        and shorter headways without requiring every signal to be individually controlled.
+        On the approach to a junction or station, signals revert to controlled operation
+        so that the interlocking can enforce route-setting and conflict prevention.
+      </p>
+
       <h3>Route Indicators and Feather Signals</h3>
       <p>
         At junctions where multiple routes diverge, the driver needs to know not just that
@@ -201,7 +241,7 @@ export default function M4L1({ goTo }: LessonProps) {
         restrictive aspect, the driver hears a horn and must acknowledge within 2.5 seconds or
         brakes apply automatically. AWS was developed in the 1950s and is fitted across the
         UK network. Its limitation is that it does not distinguish between a single yellow
-        (next signal is red) and a double yellow (two signals ahead are clear) — both
+        (next signal is red) and a double yellow (next signal is yellow) — both
         give the same warning. The driver must observe the signal aspect visually.
       </p>
       <p>

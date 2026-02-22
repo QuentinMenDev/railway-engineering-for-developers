@@ -124,6 +124,25 @@ export default function M4L4({ goTo }: LessonProps) {
         signaller to focus on disruption management.
       </p>
 
+      <h3>Flank Protection</h3>
+      <p>
+        Setting a route is not only about ensuring the path ahead is safe — the
+        interlocking must also protect the route from <strong>flank movements</strong>:
+        trains or vehicles on adjacent tracks that could foul the set route. This is
+        achieved by setting <strong>trap points</strong> or <strong>flank points</strong>
+        in positions that would derail any conflicting movement before it could reach the
+        running line, or by holding protecting signals at danger on converging tracks.
+      </p>
+      <p>
+        For example, if a route is set across a junction, a siding that connects into that
+        junction must have its trap points set to the derailing position, or its exit
+        signal held at red, or both. Without flank protection, a runaway vehicle from
+        the siding could roll onto the main route and collide with the train that has
+        been signalled through. The interlocking control table explicitly lists the flank
+        protection conditions required for each route — these are verified as part of
+        the route-setting sequence before any signal is cleared.
+      </p>
+
       <h3>Route Release and Approach Locking</h3>
       <p>
         After a train has traversed a route, the sections are released progressively:
@@ -174,7 +193,7 @@ export default function M4L4({ goTo }: LessonProps) {
         Each type represents a different balance of safety, cost, and road-user delay:
       </p>
       <ul>
-        <li><strong>AHB (Automatic Half Barrier):</strong> Barriers close automatically when a train approaches, covering the approach (left) side only. Road users must obey flashing red lights and not weave around barriers. Triggered by traction on approach track circuits. Minimum road closure time (MRT) is a key design parameter — too short and barriers don't close in time; too long and road users become frustrated and may attempt to cross.</li>
+        <li><strong>AHB (Automatic Half Barrier):</strong> Barriers close automatically when a train approaches, covering the approach (left) side only. Road users must obey flashing red lights and not weave around barriers. Triggered by train detection on approach track circuits. Minimum road closure time (MRT) is a key design parameter — too short and barriers don't close in time; too long and road users become frustrated and may attempt to cross.</li>
         <li><strong>AOCL (Automatic Open Crossing, Locally Monitored):</strong> Warning lights only, no barriers. The driver monitors the crossing and checks it is clear before passing over. Used at low-traffic crossings on low-speed lines.</li>
         <li><strong>MCB (Manually Controlled Barrier):</strong> Signaller-operated full barriers with CCTV monitoring. The signaller closes the barriers, observes the crossing on CCTV to confirm it is clear, then clears the signal. Higher safety, but road closure time depends on signaller workload and observation time.</li>
         <li><strong>MCB-OD (MCB with Obstacle Detection):</strong> Full barriers with radar-based obstacle detection that scans the crossing area and alerts the signaller if anything remains between the barriers. Provides an additional safety layer beyond CCTV observation.</li>
